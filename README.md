@@ -16,6 +16,14 @@ Aqui, vamos descrever as funções utilizadas para realizar a otimização do ti
 
 ### Ox
 
-Em Ox, a otimização do tipo BFGS é feita pela função MaxBFGS, da biblioteca * `maximize`.
+Em Ox, a otimização do tipo BFGS é feita pela função MaxBFGS, da biblioteca `maximize`. Esta função tem os seguintes argumentos:
+
+* `avP` -  vetor de parâmetros de dimensão px1. Primeiro, são colocados os chutes inciais. Depois da primeira iteração, as estimativas vão sendo armazenadas neste vetor;
+* `adFunc` - Endereço na memória da função;
+* `avScore` - Endereço dos gradientes. Se for diferente de zero, será uma matriz de dimensão px1 das primeias derivadas.
+* `amHess` - É a matriz hessiana. Será sempre igual a zero para o caso da BFGS.
+
+A função MaxBFGS retorna os seguintes valores:
+
 
 

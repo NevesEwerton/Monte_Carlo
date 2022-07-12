@@ -27,7 +27,7 @@
 
 // Setando as bibliotecas que serão usadas.
 #include <oxstd.oxh>
-#include<oxdraw.h>
+#include<oxdraw.oxh>
 #include <oxprob.oxh>
 #import <maximize>
 

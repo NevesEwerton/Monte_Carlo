@@ -33,7 +33,7 @@ A função MaxBFGS retorna os seguintes valores:
 * `MAX_LINE_FAIL`: No Convergence (no improvment in line search);
 * `MAX_FUNC_FAIL`: No Convergence (function evaluation failed);
 
-Os valores padrões escolhidos para os níveis de tolerância são: \varepsilon_{1} = 10<sup>-4 e \varepsilon_{2} = 5X10^-3.
+Os valores padrões escolhidos para os níveis de tolerância são: \varepsilon_{1} = 10<sup>-4 <\sup> e \varepsilon_{2} = 5X10^-3.
 
 ### R
 

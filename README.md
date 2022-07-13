@@ -37,4 +37,13 @@ Os valores padrões escolhidos para os níveis de tolerância são: \varepsilon_
 
 
 
+## REFERÊNCIAS
+
+ Doornik, Jurgen A. "An Object-Oriented Matrix Programming Language Ox 6." (2009)
+
+
+
+
+
+
 

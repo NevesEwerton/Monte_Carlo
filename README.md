@@ -35,6 +35,25 @@ A função MaxBFGS retorna os seguintes valores:
 
 Os valores padrões escolhidos para os níveis de tolerância são: \varepsilon_{1} = 10^-4 e \varepsilon_{2} = 5X10^-3.
 
+### R
+
+Em R, fazemos uso da função `optim`. É uma função que otimiza baseado em algoritmos gerais comoo Nelder-Mead, Quasi-Newton e gradiente conjugado.
+
+Os argumentos da função `optim` são:
+
+* `par` - valores iniciais dos parâmetros a serem otimizados.
+
+* `fn` - A função a ser minimizada (ou maximizada), com os primeiros argumentos o vetor de parâmetros em que a minimização é tomada. Deve retornar um escalar.
+
+* `gr` - Um função que retorna o gradiente dos métodos "BFGS", "CG" e "L-BFGS-B". Se for NULL, uma aproximação finita será usada. Para o método "SANN", ele especifica a função que gera um novo ponto candidato. Se for NULL, um kernel Gaussiano de Markov padrão é usado. 
+
+* `method` - O método de otimização a ser usado.
+
+* `lower, upper` - Limites das variáveis do método "L-BFGS-B", ou limites para pesquisar o método "Brent".
+
+* `control` - Uma lista de parâmetros de controle.
+
+* `hessian` - Lógico. 
 
 
 ## REFERÊNCIAS
